@@ -1,7 +1,7 @@
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
-import { createTodo } from "@/app/actions";
+import { createTodo } from "@/app/[slug]/actions";
 
 const initialState = {
   message: "",

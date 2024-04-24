@@ -16,3 +16,16 @@ export default function RootLayout({
     </html>
   );
 }
+
+export async function generateStaticParams() {
+  /**
+   * Take the domains from the constants and
+   * generate the static paths using domain + locales
+   */
+  const paths = ["test", "second"].flatMap((entry) => ({
+    slug: entry,
+  })
+      
+  )
+  return paths
+}
